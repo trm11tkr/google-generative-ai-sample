@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:google_generative_ai_sample/home_page.dart';
+import 'package:google_generative_ai_sample/features/chat/chat_page.dart';
 
 void main() async {
   await dotenv.load(fileName: ".env");
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: ChatPage(),
     );
   }
 }
